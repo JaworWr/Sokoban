@@ -112,22 +112,22 @@ void wcisn_klawisz(GtkWidget* widget, GdkEventKey* klawisz, gpointer dane)
     bool czy_ruch=false;
     switch(klawisz->keyval)
     {
-//        case GDK_KEY_Left:
+        case GDK_KEY_Left:
         case GDK_KEY_a:
         case GDK_KEY_A:
             czy_ruch=ruch(&aktualny.poziomy[aktualny_poziom], LEWO);
             break;
-//        case GDK_KEY_Up:
+        case GDK_KEY_Up:
         case GDK_KEY_w:
         case GDK_KEY_W:
             czy_ruch=ruch(&aktualny.poziomy[aktualny_poziom], GORA);
             break;
-//        case GDK_KEY_Right:
+        case GDK_KEY_Right:
         case GDK_KEY_d:
         case GDK_KEY_D:
             czy_ruch=ruch(&aktualny.poziomy[aktualny_poziom], PRAWO);
             break;
-//        case GDK_KEY_Down:
+        case GDK_KEY_Down:
         case GDK_KEY_s:
         case GDK_KEY_S:
             czy_ruch=ruch(&aktualny.poziomy[aktualny_poziom], DOL);
